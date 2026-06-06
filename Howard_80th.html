@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 80th Birthday Papa Howard — Coupon Book from Yoni</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #B8860B;
+    --gold-light: #FFF8E7;
+    --gold-mid: #F0D87A;
+    --brown-dark: #3D2B00;
+    --brown-mid: #7A4F1E;
+    --red-deep: #8B0000;
+    --red-warm: #C0392B;
+    --cream: #FFFDF5;
+    --cream-dark: #F5EDD8;
+    --border-dash: #C4A55A;
+    --photo-bg: #F8F2E4;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #e8dfc8;
+    font-family: 'Lora', Georgia, serif;
+    color: var(--brown-dark);
+  }
+
+  @media print {
+    body { background: white; }
+    .page { page-break-after: always; box-shadow: none !important; margin: 0 !important; border-radius: 0 !important; }
+    .page:last-child { page-break-after: avoid; }
+    @page { size: letter; margin: 0.35in; }
+    .screen-hint { display: none; }
+  }
+
+  .screen-hint {
+    text-align: center;
+    padding: 16px;
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    color: #7a6040;
+    letter-spacing: 0.04em;
+  }
+  .screen-hint strong { color: var(--red-deep); }
+
+  .page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 0 auto 32px;
+    background: var(--cream);
+    box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* ══ COVER ══ */
+  .cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 11in;
+    background: var(--cream);
+    position: relative;
+    padding: 0.6in 0.8in;
+    text-align: center;
+  }
+  .cover-border { position: absolute; inset: 22px; border: 3px double var(--gold); border-radius: 2px; pointer-events: none; }
+  .cover-border-inner { position: absolute; inset: 30px; border: 1px solid var(--gold-mid); border-radius: 1px; pointer-events: none; }
+  .cover-corner { position: absolute; width: 28px; height: 28px; color: var(--gold); font-size: 22px; line-height: 1; }
+  .cover-corner.tl { top: 10px; left: 10px; }
+  .cover-corner.tr { top: 10px; right: 10px; transform: scaleX(-1); }
+  .cover-corner.bl { bottom: 10px; left: 10px; transform: scaleY(-1); }
+  .cover-corner.br { bottom: 10px; right: 10px; transform: scale(-1,-1); }
+  .cover-eyebrow { font-family: 'Lora', serif; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
+  .cover-birthday { font-family: 'Playfair Display', serif; font-size: 52px; font-weight: 700; color: var(--red-deep); line-height: 1.1; margin-bottom: 6px; }
+  .cover-name { font-family: 'Playfair Display', serif; font-size: 64px; font-weight: 700; font-style: italic; color: var(--gold); line-height: 1.1; margin-bottom: 28px; }
+  .cover-divider { display: flex; align-items: center; gap: 12px; margin: 10px 0 28px; width: 340px; }
+  .cover-divider-line { flex: 1; height: 1px; background: linear-gradient(to right, transparent, var(--gold), transparent); }
+  .cover-divider-ornament { color: var(--gold); font-size: 18px; }
+  .cover-subtitle-top { font-family: 'Lora', serif; font-style: italic; font-size: 20px; color: var(--brown-mid); margin-bottom: 10px; }
+  .cover-title { font-family: 'Playfair Display', serif; font-size: 72px; font-weight: 700; color: var(--brown-dark); letter-spacing: 0.04em; line-height: 1; margin-bottom: 16px; }
+  .cover-tagline { font-family: 'Lora', serif; font-style: italic; font-size: 17px; color: #7a6040; margin-bottom: 40px; }
+  .cover-from-block { margin-top: 20px; }
+  .cover-from-label { font-family: 'Lora', serif; font-style: italic; font-size: 16px; color: var(--brown-mid); margin-bottom: 6px; }
+  .cover-from-name { font-family: 'Playfair Display', serif; font-size: 44px; font-weight: 700; color: var(--red-deep); letter-spacing: 0.05em; }
+  .cover-cake { font-size: 64px; margin-bottom: 20px; line-height: 1; }
+
+  /* ══ COUPON PAGES ══ */
+  .coupon-page {
+    padding: 0.4in 0.5in;
+    min-height: 11in;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: var(--cream-dark);
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(184,134,11,0.04) 0%, transparent 60%),
+      radial-gradient(circle at 80% 80%, rgba(184,134,11,0.04) 0%, transparent 60%);
+  }
+
+  /* ── Each coupon wrapper: top strip + photo section ── */
+  .coupon-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 2.5px dotted var(--border-dash);
+    border-radius: 10px;
+    background: var(--gold-light);
+    position: relative;
+    overflow: hidden;
+  }
+  .coupon-wrapper::before {
+    content: '✂';
+    position: absolute;
+    top: -13px;
+    left: -5px;
+    font-size: 15px;
+    color: var(--border-dash);
+    background: var(--cream-dark);
+    padding: 0 3px;
+    line-height: 1;
+    z-index: 2;
+  }
+
+  /* ── Top strip: illustration + text ── */
+  .coupon-top {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 18px 22px 14px;
+    border-bottom: 1.5px dashed var(--gold-mid);
+  }
+
+  .coupon-illustration {
+    flex: 0 0 140px;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .coupon-illustration svg { width: 138px; height: 138px; }
+
+  .coupon-content {
+    flex: 1;
+    border-left: 2px dashed var(--gold-mid);
+    padding-left: 20px;
+  }
+
+  .coupon-header {
+    font-family: 'Lora', serif;
+    font-size: 10.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--red-warm);
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+
+  .coupon-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    font-weight: 700;
+    color: var(--brown-dark);
+    line-height: 1.3;
+    margin-bottom: 3px;
+  }
+
+  .coupon-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--gold);
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+
+  .coupon-note {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 13.5px;
+    color: #7a6040;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  .coupon-footer {
+    font-family: 'Lora', serif;
+    font-size: 10px;
+    color: var(--red-warm);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    border-top: 1px solid var(--gold-mid);
+    padding-top: 7px;
+  }
+
+  /* ── Photo / Redemption Section ── */
+  .coupon-redemption {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    background: var(--photo-bg);
+    min-height: 130px;
+  }
+
+  .redemption-date-block {
+    flex: 0 0 180px;
+    padding: 14px 18px;
+    border-right: 1.5px dashed var(--gold-mid);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .redemption-label {
+    font-family: 'Lora', serif;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red-warm);
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .redemption-date-line {
+    border: none;
+    border-bottom: 1.5px solid var(--border-dash);
+    width: 100%;
+    height: 28px;
+    background: transparent;
+  }
+
+  .redemption-stamp {
+    margin-top: 8px;
+    width: 64px;
+    height: 64px;
+    border: 2px dashed var(--border-dash);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+  }
+  .redemption-stamp-inner {
+    font-family: 'Lora', serif;
+    font-size: 8px;
+    color: var(--border-dash);
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 1.4;
+  }
+
+  .redemption-photo-block {
+    flex: 1;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .redemption-photo-label {
+    font-family: 'Lora', serif;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red-warm);
+    font-weight: 600;
+  }
+
+  .redemption-photo-placeholder {
+    flex: 1;
+    min-height: 88px;
+    border: 1.5px dashed var(--border-dash);
+    border-radius: 6px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .photo-corner {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-color: var(--border-dash);
+    border-style: solid;
+    opacity: 0.5;
+  }
+  .photo-corner.tl { top: 5px; left: 5px; border-width: 2px 0 0 2px; }
+  .photo-corner.tr { top: 5px; right: 5px; border-width: 2px 2px 0 0; }
+  .photo-corner.bl { bottom: 5px; left: 5px; border-width: 0 0 2px 2px; }
+  .photo-corner.br { bottom: 5px; right: 5px; border-width: 0 2px 2px 0; }
+
+  .photo-placeholder-text {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 12px;
+    color: #c8ab7a;
+    text-align: center;
+    line-height: 1.6;
+    padding: 8px;
+  }
+
+  /* ── Cut line between coupon wrappers ── */
+  .cut-line {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 6px 0;
+    opacity: 0.45;
+  }
+  .cut-line-rule { flex: 1; border-top: 1.5px dashed var(--border-dash); }
+  .cut-line-scissors { font-size: 13px; color: var(--border-dash); }
+</style>
+</head>
+<body>
+
+<p class="screen-hint">To print: <strong>File → Print</strong> in your browser &nbsp;•&nbsp; Paper: <strong>Letter</strong> &nbsp;•&nbsp; Margins: <strong>Default</strong> &nbsp;•&nbsp; Each page prints one sheet.</p>
+
+<!-- ════════════ COVER ════════════ -->
+<div class="page">
+  <div class="cover">
+    <div class="cover-border"></div>
+    <div class="cover-border-inner"></div>
+    <div class="cover-corner tl">❧</div>
+    <div class="cover-corner tr">❧</div>
+    <div class="cover-corner bl">❧</div>
+    <div class="cover-corner br">❧</div>
+    <div class="cover-cake">🎂</div>
+    <div class="cover-eyebrow">A Very Special</div>
+    <div class="cover-birthday">Happy 80th Birthday</div>
+    <div class="cover-name">Papa Howard!</div>
+    <div class="cover-divider"><div class="cover-divider-line"></div><div class="cover-divider-ornament">✦</div><div class="cover-divider-line"></div></div>
+    <div class="cover-subtitle-top">A Very Special</div>
+    <div class="cover-title">COUPON<br>BOOK</div>
+    <div class="cover-tagline">12 Redeemable Adventures, Meals &amp; Memories</div>
+    <div class="cover-divider"><div class="cover-divider-line"></div><div class="cover-divider-ornament">✦</div><div class="cover-divider-line"></div></div>
+    <div class="cover-from-block">
+      <div class="cover-from-label">Presented with love by</div>
+      <div class="cover-from-name">Yoni</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ════════════ PAGE 1 — Coupons 1 & 2 ════════════ -->
+<div class="page">
+  <div class="coupon-page">
+
+    <!-- COUPON 1: Corned Beef Sandwich -->
+    <div class="coupon-wrapper">
+      <div class="coupon-top">
+        <div class="coupon-illustration">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="60" cy="108" rx="52" ry="9" fill="#f0e8d8" stroke="#c8a87a" stroke-width="1.5"/>
+            <rect x="18" y="78" width="84" height="22" rx="7" fill="#d4945a" stroke="#b06030" stroke-width="1.5"/>
+            <ellipse cx="60" cy="70" rx="36" ry="11" fill="#c45a3a"/>
+            <ellipse cx="60" cy="62" rx="38" ry="11" fill="#b84030"/>
+            <ellipse cx="60" cy="54" rx="36" ry="11" fill="#c45a3a"/>
+            <path d="M30 70 Q45 65 60 70 Q75 75 90 70" fill="none" stroke="#9a2818" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M30 62 Q45 57 60 62 Q75 67 90 62" fill="none" stroke="#9a2818" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M32 50 Q46 44 60 50 Q74 56 88 50" fill="none" stroke="#e8c030" stroke-width="2.5" stroke-linecap="round"/>
+            <rect x="14" y="34" width="92" height="24" rx="12" fill="#d4945a" stroke="#b06030" stroke-width="1.5"/>
+            <ellipse cx="44" cy="43" rx="4" ry="2.5" fill="#f0d090" transform="rotate(-20,44,43)"/>
+            <ellipse cx="62" cy="39" rx="4" ry="2.5" fill="#f0d090" transform="rotate(10,62,39)"/>
+            <ellipse cx="78" cy="42" rx="4" ry="2.5" fill="#f0d090" transform="rotate(-10,78,42)"/>
+            <ellipse cx="96" cy="108" rx="8" ry="18" fill="#6aaa40" stroke="#4a8a28" stroke-width="1.2"/>
+            <line x1="96" y1="91" x2="96" y2="124" stroke="#4a8a28" stroke-width="0.8"/>
+            <path d="M89 99 Q96 96 103 99" fill="none" stroke="#4a8a28" stroke-width="0.8"/>
+            <path d="M89 107 Q96 104 103 107" fill="none" stroke="#4a8a28" stroke-width="0.8"/>
+            <path d="M89 115 Q96 112 103 115" fill="none" stroke="#4a8a28" stroke-width="0.8"/>
+            <circle cx="93" cy="103" r="2.5" fill="#7aba50" stroke="#4a8a28" stroke-width="0.6"/>
+            <circle cx="100" cy="111" r="2.5" fill="#7aba50" stroke="#4a8a28" stroke-width="0.6"/>
+          </svg>
+        </div>
+        <div class="coupon-content">
+          <div class="coupon-header">✦ This coupon is good for ✦</div>
+          <div class="coupon-title">One Quest to Devour the Most Delicious</div>
+          <div class="coupon-subtitle">Lean Corned Beef Sandwich</div>
+          <div class="coupon-note">Redeemable anytime — no expiration on the best sandwich in town!</div>
+          <div class="coupon-footer">Presented to Papa Howard with Love &nbsp;•&nbsp; From: Yoni &nbsp;•&nbsp; Happy 80th Birthday! 🎂</div>
+        </div>
+      </div>
+      <div class="coupon-redemption">
+        <div class="redemption-date-block">
+          <div class="redemption-label">Redeemed On</div>
+          <div class="redemption-date-line"></div>
+          <div style="margin-top:10px; display:flex; justify-content:center;">
+            <div class="redemption-stamp"><div class="redemption-stamp-inner">Stamp<br>Here</div></div>
+          </div>
+        </div>
+        <div class="redemption-photo-block">
+          <div class="redemption-photo-label">📸 &nbsp;Memory Photo</div>
+          <div class="redemption-photo-placeholder">
+            <div class="photo-corner tl"></div><div class="photo-corner tr"></div>
+            <div class="photo-corner bl"></div><div class="photo-corner br"></div>
+            <div class="photo-placeholder-text">Attach your photo here<br><span style="font-size:10px; opacity:0.7;">print &amp; tape, or insert digitally</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cut-line"><div class="cut-line-rule"></div><div class="cut-line-scissors">✂</div><div class="cut-line-rule"></div></div>
+
+    <!-- COUPON 2: Hot Dog -->
+    <div class="coupon-wrapper">
+      <div class="coupon-top">
+        <div class="coupon-illustration">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 84 Q60 92 106 84 L103 102 Q60 110 17 102 Z" fill="#c8844a" stroke="#a05f28" stroke-width="1.5"/>
+            <path d="M14 84 Q60 62 106 84" fill="#c8844a" stroke="#a05f28" stroke-width="1.5"/>
+            <path d="M22 76 Q60 62 98 76" fill="none" stroke="#e0a060" stroke-width="1.5" opacity="0.6"/>
+            <ellipse cx="44" cy="72" rx="4" ry="2" fill="#e8c870" transform="rotate(-20,44,72)"/>
+            <ellipse cx="60" cy="68" rx="4" ry="2" fill="#e8c870" transform="rotate(8,60,68)"/>
+            <ellipse cx="76" cy="70" rx="4" ry="2" fill="#e8c870" transform="rotate(-12,76,70)"/>
+            <rect x="16" y="68" width="88" height="22" rx="11" fill="#c03820"/>
+            <ellipse cx="60" cy="72" rx="32" ry="5" fill="#d85030" opacity="0.6"/>
+            <path d="M30 69 Q32 79 30 90" fill="none" stroke="#1a0600" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+            <path d="M46 68 Q48 79 46 91" fill="none" stroke="#1a0600" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+            <path d="M60 68 Q62 79 60 91" fill="none" stroke="#1a0600" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+            <path d="M74 68 Q76 79 74 91" fill="none" stroke="#1a0600" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+            <path d="M90 69 Q92 79 90 90" fill="none" stroke="#1a0600" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+            <ellipse cx="16" cy="79" rx="6" ry="11" fill="#b02e18" stroke="#8a1808" stroke-width="1"/>
+            <ellipse cx="104" cy="79" rx="6" ry="11" fill="#b02e18" stroke="#8a1808" stroke-width="1"/>
+            <path d="M22 74 Q34 66 46 74 Q58 82 70 74 Q82 66 94 74 Q101 70 104 72" fill="none" stroke="#f0d000" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="34" y="44" width="52" height="16" rx="8" fill="#fff8c0" stroke="#e8c030" stroke-width="1.2"/>
+            <text x="60" y="56" font-family="Georgia,serif" font-size="9" fill="#907000" text-anchor="middle" font-style="italic">extra mustard!</text>
+            <path d="M42 63 Q44 56 42 49" fill="none" stroke="#c0a880" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
+            <path d="M60 61 Q62 54 60 47" fill="none" stroke="#c0a880" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
+            <path d="M78 63 Q80 56 78 49" fill="none" stroke="#c0a880" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="coupon-content">
+          <div class="coupon-header">✦ This coupon is good for ✦</div>
+          <div class="coupon-title">One "Boys-Only" Adventure to Portillo's</div>
+          <div class="coupon-subtitle">For Hot Dogs</div>
+          <div class="coupon-note">Just Papa &amp; Yoni. No girls allowed.</div>
+          <div class="coupon-footer">Presented to Papa Howard with Love &nbsp;•&nbsp; From: Yoni &nbsp;•&nbsp; Happy 80th Birthday! 🎂</div>
+        </div>
+      </div>
+      <div class="coupon-redemption">
+        <div class="redemption-date-block">
+          <div class="redemption-label">Redeemed On</div>
+          <div class="redemption-date-line"></div>
+          <div style="margin-top:10px; display:flex; justify-content:center;">
+            <div class="redemption-stamp"><div class="redemption-stamp-inner">Stamp<br>Here</div></div>
+          </div>
+        </div>
+        <div class="redemption-photo-block">
+          <div class="redemption-photo-label">📸 &nbsp;Memory Photo</div>
+          <div class="redemption-photo-placeholder">
+            <div class="photo-corner tl"></div><div class="photo-corner tr"></div>
+            <div class="photo-corner bl"></div><div class="photo-corner br"></div>
+            <div class="photo-placeholder-text">Attach your photo here<br><span style="font-size:10px; opacity:0.7;">print &amp; tape, or insert digitally</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ════════════ PAGE 2 — Coupons 3 & 4 ════════════ -->
+<div class="page">
+  <div class="coupon-page">
+
+    <!-- COUPON 3: White Sox -->
+    <div class="coupon-wrapper">
+      <div class="coupon-top">
+        <div class="coupon-illustration">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="60" cy="96" rx="50" ry="14" fill="#d4a870" stroke="#b88848" stroke-width="1.2" opacity="0.5"/>
+            <polygon points="60,28 88,50 88,86 32,86 32,50" fill="white" stroke="#555" stroke-width="2.5"/>
+            <polygon points="60,36 82,55 82,80 38,80 38,55" fill="none" stroke="#ddd" stroke-width="0.8"/>
+            <circle cx="88" cy="60" r="20" fill="white" stroke="#ddd" stroke-width="1.2"/>
+            <path d="M76 50 Q69 60 76 70" fill="none" stroke="#cc3333" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M72 52 L76 50" fill="none" stroke="#cc3333" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M72 68 L76 70" fill="none" stroke="#cc3333" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M72 56 L76 54" fill="none" stroke="#cc3333" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M72 64 L76 66" fill="none" stroke="#cc3333" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M100 50 Q107 60 100 70" fill="none" stroke="#cc3333" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M104 52 L100 50" fill="none" stroke="#cc3333" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M104 68 L100 70" fill="none" stroke="#cc3333" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M104 56 L100 54" fill="none" stroke="#cc3333" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M104 64 L100 66" fill="none" stroke="#cc3333" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="coupon-content">
+          <div class="coupon-header">✦ This coupon is good for ✦</div>
+          <div class="coupon-title">One Family Trip to Guaranteed Rate Field</div>
+          <div class="coupon-subtitle">White Sox vs. Guardians</div>
+          <div class="coupon-note">Go Sox! (Even when they need a little help. 😄)</div>
+          <div class="coupon-footer">Presented to Papa Howard with Love &nbsp;•&nbsp; From: Yoni &nbsp;•&nbsp; Happy 80th Birthday! 🎂</div>
+        </div>
+      </div>
+      <div class="coupon-redemption">
+        <div class="redemption-date-block">
+          <div class="redemption-label">Redeemed On</div>
+          <div class="redemption-date-line"></div>
+          <div style="margin-top:10px; display:flex; justify-content:center;">
+            <div class="redemption-stamp"><div class="redemption-stamp-inner">Stamp<br>Here</div></div>
+          </div>
+        </div>
+        <div class="redemption-photo-block">
+          <div class="redemption-photo-label">📸 &nbsp;Memory Photo</div>
+          <div class="redemption-photo-placeholder">
+            <div class="photo-corner tl"></div><div class="photo-corner tr"></div>
+            <div class="photo-corner bl"></div><div class="photo-corner br"></div>
+            <div class="photo-placeholder-text">Attach your photo here<br><span style="font-size:10px; opacity:0.7;">print &amp; tape, or insert digitally</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cut-line"><div class="cut-line-rule"></div><div class="cut-line-scissors">✂</div><div class="cut-line-rule"></div></div>
+
+    <!-- COUPON 4: Get Out of Jail Free -->
+    <div class="coupon-wrapper">
+      <div class="coupon-top">
+        <div class="coupon-illustration">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <rect x="18" y="24" width="84" height="88" rx="5" fill="#f5e8c8" stroke="#8a6030" stroke-width="2"/>
+            <rect x="28" y="30" width="64" height="16" rx="3" fill="#c83020" stroke="#8a1010" stroke-width="1.2"/>
+            <text x="60" y="42" font-family="Georgia,serif" font-size="10" fill="white" text-anchor="middle" font-weight="bold" letter-spacing="2">JAIL</text>
+            <line x1="30" y1="48" x2="30" y2="108" stroke="#666" stroke-width="4" stroke-linecap="round"/>
+            <line x1="44" y1="48" x2="44" y2="108" stroke="#666" stroke-width="4" stroke-linecap="round"/>
+            <line x1="58" y1="48" x2="58" y2="108" stroke="#666" stroke-width="4" stroke-linecap="round"/>
+            <line x1="72" y1="48" x2="72" y2="108" stroke="#666" stroke-width="4" stroke-linecap="round"/>
+            <line x1="86" y1="48" x2="86" y2="108" stroke="#666" stroke-width="4" stroke-linecap="round"/>
+            <line x1="100" y1="48" x2="100" y2="108" stroke="#666" stroke-width="4" stroke-linecap="round"/>
+            <line x1="28" y1="76" x2="92" y2="76" stroke="#555" stroke-width="2"/>
+            <rect x="48" y="82" width="24" height="22" rx="3" fill="#1a3a8a"/>
+            <rect x="54" y="82" width="12" height="22" fill="#f0f0f0"/>
+            <path d="M54 83 L60 87 L66 83 L60 86 Z" fill="#c83020"/>
+            <rect x="50" y="103" width="8" height="10" rx="2" fill="#2a2a6a"/>
+            <rect x="62" y="103" width="8" height="10" rx="2" fill="#2a2a6a"/>
+            <circle cx="60" cy="72" r="12" fill="#f5d0a0" stroke="#c8a060" stroke-width="1.2"/>
+            <rect x="52" y="54" width="16" height="13" rx="1" fill="#1a1a1a"/>
+            <rect x="48" y="65" width="24" height="3" rx="1.5" fill="#1a1a1a"/>
+            <rect x="54" y="52" width="12" height="3" fill="#c8a060"/>
+            <circle cx="64" cy="69" r="4" fill="none" stroke="#4a3010" stroke-width="1.2"/>
+            <path d="M56 73 Q58 71 60 73 Q62 71 64 73" fill="none" stroke="#4a3010" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M57 77 Q60 80 63 77" fill="none" stroke="#4a3010" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M48 88 Q38 86 33 90" fill="none" stroke="#f5d0a0" stroke-width="5" stroke-linecap="round"/>
+            <path d="M72 88 Q82 86 87 90" fill="none" stroke="#f5d0a0" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="coupon-content">
+          <div class="coupon-header">✦ This coupon is good for ✦</div>
+          <div class="coupon-title">One "Get Out of Jail Free" Card</div>
+          <div class="coupon-subtitle">No Questions Asked</div>
+          <div class="coupon-note">Valid for one (1) Yoni-related incident of Papa's choosing. Use wisely.</div>
+          <div class="coupon-footer">Presented to Papa Howard with Love &nbsp;•&nbsp; From: Yoni &nbsp;•&nbsp; Happy 80th Birthday! 🎂</div>
+        </div>
+      </div>
+      <div class="coupon-redemption">
+        <div class="redemption-date-block">
+          <div class="redemption-label">Redeemed On</div>
+          <div class="redemption-date-line"></div>
+          <div style="margin-top:10px; display:flex; justify-content:center;">
+            <div class="redemption-stamp"><div class="redemption-stamp-inner">Stamp<br>Here</div></div>
+          </div>
+        </div>
+        <div class="redemption-photo-block">
+          <div class="redemption-photo-label">📸 &nbsp;Memory Photo</div>
+          <div class="redemption-photo-placeholder">
+            <div class="photo-corner tl"></div><div class="photo-corner tr"></div>
+            <div class="photo-corner bl"></div><div class="photo-corner br"></div>
+            <div class="photo-placeholder-text">Attach your photo here<br><span style="font-size:10px; opacity:0.7;">print &amp; tape, or insert digitally</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ════════════ PAGE 3 — Coupons 5 & 6 ════════════ -->
+<div class="page">
+  <div class="coupon-page">
+
+    <!-- COUPON 5: JoJo Nap -->
+    <div class="coupon-wrapper">
+      <div class="coupon-top">
+        <div class="coupon-illustration">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="76" width="104" height="34" rx="8" fill="#b85c30" stroke="#8a3810" stroke-width="1.5"/>
+            <rect x="12" y="79" width="46" height="28" rx="6" fill="#c87040" stroke="#a05020" stroke-width="1.2"/>
+            <rect x="62" y="79" width="46" height="28" rx="6" fill="#c87040" stroke="#a05020" stroke-width="1.2"/>
+            <rect x="8" y="58" width="104" height="24" rx="7" fill="#b85c30" stroke="#8a3810" stroke-width="1.5"/>
+            <rect x="5" y="64" width="18" height="46" rx="7" fill="#b85c30" stroke="#8a3810" stroke-width="1.5"/>
+            <rect x="97" y="64" width="18" height="46" rx="7" fill="#b85c30" stroke="#8a3810" stroke-width="1.5"/>
+            <rect x="16" y="108" width="8" height="10" rx="2.5" fill="#7a3810"/>
+            <rect x="96" y="108" width="8" height="10" rx="2.5" fill="#7a3810"/>
+            <ellipse cx="60" cy="72" rx="40" ry="11" fill="#8b4513" stroke="#5a2a08" stroke-width="1.2"/>
+            <ellipse cx="94" cy="66" rx="13" ry="10" fill="#8b4513" stroke="#5a2a08" stroke-width="1.2"/>
+            <ellipse cx="104" cy="70" rx="8" ry="6" fill="#7a3a0a" stroke="#5a2a08" stroke-width="0.8"/>
+            <ellipse cx="110" cy="69" rx="3" ry="2.5" fill="#2a1008"/>
+            <path d="M90 63 Q94 61 98 63" fill="none" stroke="#3a1a08" stroke-width="1.5" stroke-linecap="round"/>
+            <ellipse cx="84" cy="71" rx="6" ry="10" fill="#6a2a08" stroke="#4a1808" stroke-width="1.2" transform="rotate(-10,84,71)"/>
+            <path d="M22 69 Q14 60 12 54" fill="none" stroke="#8b4513" stroke-width="6" stroke-linecap="round"/>
+            <ellipse cx="46" cy="80" rx="6" ry="4" fill="#6a3010" stroke="#4a1808" stroke-width="0.8"/>
+            <ellipse cx="74" cy="80" rx="6" ry="4" fill="#6a3010" stroke="#4a1808" stroke-width="0.8"/>
+            <text x="94" y="46" font-family="Georgia,serif" font-size="11" fill="#8888aa" font-style="italic">z</text>
+            <text x="102" y="38" font-family="Georgia,serif" font-size="13" fill="#8888aa" font-style="italic">z</text>
+            <text x="111" y="28" font-family="Georgia,serif" font-size="15" fill="#8888aa" font-style="italic">z</text>
+          </svg>
+        </div>
+        <div class="coupon-content">
+          <div class="coupon-header">✦ This coupon is good for ✦</div>
+          <div class="coupon-title">One Nap with JoJo on the Couch</div>
+          <div class="coupon-subtitle">Featuring Our Miniature Dachshund</div>
+          <div class="coupon-note">JoJo is ready. So is the couch. Napping is mandatory.</div>
+          <div class="coupon-footer">Presented to Papa Howard with Love &nbsp;•&nbsp; From: Yoni &nbsp;•&nbsp; Happy 80th Birthday! 🎂</div>
+        </div>
+      </div>
+      <div class="coupon-redemption">
+        <div class="redemption-date-block">
+          <div class="redemption-label">Redeemed On</div>
+          <div class="redemption-date-line"></div>
+          <div style="margin-top:10px; display:flex; justify-content:center;">
+            <div class="redemption-stamp"><div class="redemption-stamp-inner">Stamp<br>Here</div></div>
+          </div>
+        </div>
+        <div class="redemption-photo-block">
+          <div class="redemption-photo-label">📸 &nbsp;Memory Photo</div>
+          <div class="redemption-photo-placeholder">
+            <div class="photo-corner tl"></div><div class="photo-corner tr"></div>
+            <div class="photo-corner bl"></div><div class="photo-corner br"></div>
+            <div class="photo-placeholder-text">Attach your photo here<br><span style="font-size:10px; opacity:0.7;">print &amp; tape, or insert digitally</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cut-line"><div class="cut-line-rule"></div><div class="cut-line-scissors">✂</div><div class="cut-line-rule"></div></div>
+
+    <!-- COUPON 6: BBQ Ribs -->
+    <div class="coupon-wrapper">
+      <div class="coupon-top">
+        <div class="coupon-illustration">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="60" cy="102" rx="52" ry="13" fill="#e8d4b0" stroke="#c0a070" stroke-width="1.5"/>
+            <rect x="18" y="58" width="84" height="42" rx="5" fill="#8b2a10" stroke="#5a1808" stroke-width="1.5"/>
+            <rect x="22" y="62" width="76" height="34" rx="3" fill="#a83420" opacity="0.7"/>
+            <line x1="34" y1="58" x2="34" y2="100" stroke="#2a0808" stroke-width="3.5" stroke-linecap="round" opacity="0.6"/>
+            <line x1="48" y1="58" x2="48" y2="100" stroke="#2a0808" stroke-width="3.5" stroke-linecap="round" opacity="0.6"/>
+            <line x1="60" y1="58" x2="60" y2="100" stroke="#2a0808" stroke-width="3.5" stroke-linecap="round" opacity="0.6"/>
+            <line x1="72" y1="58" x2="72" y2="100" stroke="#2a0808" stroke-width="3.5" stroke-linecap="round" opacity="0.6"/>
+            <line x1="84" y1="58" x2="84" y2="100" stroke="#2a0808" stroke-width="3.5" stroke-linecap="round" opacity="0.6"/>
+            <rect x="26" y="36" width="10" height="26" rx="5" fill="#f5e8d0" stroke="#c8b080" stroke-width="1.2"/>
+            <rect x="40" y="32" width="10" height="30" rx="5" fill="#f5e8d0" stroke="#c8b080" stroke-width="1.2"/>
+            <rect x="54" y="30" width="10" height="32" rx="5" fill="#f5e8d0" stroke="#c8b080" stroke-width="1.2"/>
+            <rect x="68" y="32" width="10" height="30" rx="5" fill="#f5e8d0" stroke="#c8b080" stroke-width="1.2"/>
+            <rect x="82" y="36" width="10" height="26" rx="5" fill="#f5e8d0" stroke="#c8b080" stroke-width="1.2"/>
+            <path d="M50 100 Q52 107 50 112" fill="none" stroke="#c83020" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="50" cy="114" r="3" fill="#c83020"/>
+            <path d="M68 100 Q70 105 69 109" fill="none" stroke="#c83020" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="69" cy="111" r="2.5" fill="#c83020"/>
+          </svg>
+        </div>
+        <div class="coupon-content">
+          <div class="coupon-header">✦ This coupon is good for ✦</div>
+          <div class="coupon-title">One Trip to Wildfire</div>
+          <div class="coupon-subtitle">For BBQ Ribs</div>
+          <div class="coupon-note">The good stuff. Order the ribs. Don't share.</div>
+          <div class="coupon-footer">Presented to Papa Howard with Love &nbsp;•&nbsp; From: Yoni &nbsp;•&nbsp; Happy 80th Birthday! 🎂</div>
+        </div>
+      </div>
+      <div class="coupon-redemption">
+        <div class="redemption-date-block">
+          <div class="redemption-label">Redeemed On</div>
+          <div class="redemption-date-line"></div>
+          <div style="margin-top:10px; display:flex; justify-content:center;">
+            <div class="redemption-stamp"><div class="redemption-stamp-inner">Stamp<br>Here</div></div>
+          </div>
+        </div>
+        <div class="redemption-photo-block">
+          <div class="redemption-photo-label">📸 &nbsp;Memory Photo</div>
+          <div class="redemption-photo-placeholder">
+            <div class="photo-corner tl"></div><div class="photo-corner tr"></div>
+            <div class="photo-corner bl"></div><div class="photo-corner br"></div>
+            <div class="photo-placeholder-text">Attach your photo here<br><span style="font-size:10px; opacity:0.7;">print &amp; tape, or insert digitally</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ════════════ PAGE 4 — Coupons 7 & 8 ════════════ -->
+<div class="page">
+  <div class="coupon-page">
+
+    <!-- COUPON 7: Costco Cart -->
+    <div class="coupon-wrapper">
+      <div class="coupon-top">
+        <div class="coupon-illustration">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 62 L26 102 L98 102 L106 62 Z" fill="#e8f0f8" stroke="#5a8ab8" stroke-width="2"/>
+            <line x1="20" y1="75" x2="104" y2="75" stroke="#5a8ab8" stroke-width="0.8"/>
+            <line x1="22" y1="88" x2="102" y2="88" stroke="#5a8ab8" stroke-width="0.8"/>
+            <line x1="42" y1="62" x2="39" y2="102" stroke="#5a8ab8" stroke-width="0.8"/>
+            <line x1="62" y1="62" x2="62" y2="102" stroke="#5a8ab8" stroke-width="0.8"/>
+            <line x1="82" y1="62" x2="85" y2="102" stroke="#5a8ab8" stroke-width="0.8"/>
+            <path d="M6 54 Q12 48 18 62" fill="none" stroke="#5a8ab8" stroke-width="3" stroke-linecap="round"/>
+            <line x1="6" y1="54" x2="6" y2="42" stroke="#5a8ab8" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="34" cy="112" r="9" fill="#ddd" stroke="#5a8ab8" stroke-width="2"/>
+            <circle cx="34" cy="112" r="3.5" fill="#5a8ab8"/>
+            <circle cx="90" cy="112" r="9" fill="#ddd" stroke="#5a8ab8" stroke-width="2"/>
+            <circle cx="90" cy="112" r="3.5" fill="#5a8ab8"/>
+            <rect x="48" y="70" width="26" height="26" rx="5" fill="#f08050"/>
+            <rect x="54" y="70" width="14" height="26" fill="#f0f0f0"/>
+            <circle cx="62" cy="58" r="13" fill="#f5d0a0" stroke="#c8a060" stroke-width="1.2"/>
+            <path d="M52 54 Q62 44 72 54" fill="#4a2808" stroke="#3a1808" stroke-width="0.8"/>
+            <circle cx="57" cy="57" r="2" fill="#3a2010"/>
+            <circle cx="67" cy="57" r="2" fill="#3a2010"/>
+            <path d="M57 64 Q62 68 67 64" fill="none" stroke="#3a2010" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M48 80 Q37 74 31 70" fill="none" stroke="#f5d0a0" stroke-width="6" stroke-linecap="round"/>
+            <path d="M74 80 Q85 74 91 70" fill="none" stroke="#f5d0a0" stroke-width="6" stroke-linecap="round"/>
+            <rect x="52" y="95" width="8" height="9" rx="2.5" fill="#4a78c0"/>
+            <rect x="64" y="95" width="8" height="9" rx="2.5" fill="#4a78c0"/>
+            <text x="30" y="64" font-family="serif" font-size="12" fill="#f0c000">★</text>
+            <text x="88" y="64" font-family="serif" font-size="12" fill="#f0c000">★</text>
+          </svg>
+        </div>
+        <div class="coupon-content">
+          <div class="coupon-header">✦ This coupon is good for ✦</div>
+          <div class="coupon-title">One Trip to Costco</div>
+          <div class="coupon-subtitle">Yoni Gets Pushed Up &amp; Down Every Aisle</div>
+          <div class="coupon-note">Samples included. Chaos guaranteed. Papa drives the cart.</div>
+          <div class="coupon-footer">Presented to Papa Howard with Love &nbsp;•&nbsp; From: Yoni &nbsp;•&nbsp; Happy 80th Birthday! 🎂</div>
+        </div>
+      </div>
+      <div class="coupon-redemption">
+        <div class="redemption-date-block">
+          <div class="redemption-label">Redeemed On</div>
+          <div class="redemption-date-line"></div>
+          <div style="margin-top:10px; display:flex; justify-content:center;">
+            <div class="redemption-stamp"><div class="redemption-stamp-inner">Stamp<br>Here</div></div>
+          </div>
+        </div>
+        <div class="redemption-photo-block">
+          <div class="redemption-photo-label">📸 &nbsp;Memory Photo</div>
+          <div class="redemption-photo-placeholder">
+            <div class="photo-corner tl"></div><div class="photo-corner tr"></div>
+            <div class="photo-corner bl"></div><div class="photo-corner br"></div>
+            <div class="photo-placeholder-text">Attach your photo here<br><span style="font-size:10px; opacity:0.7;">print &amp; tape, or insert digitally</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cut-line"><div class="cut-line-rule"></div><div class="cut-line-scissors">✂</div><div class="cut-line-rule"></div></div>
+
+    <!-- COUPON 8: IT Support / WiFi -->
+    <div class="coupon-wrapper">
+      <div class="coupon-top">
+        <div class="coupon-illustration">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="66" r="50" fill="#f0f6ff" stroke="#c0d8f0" stroke-width="1.2"/>
+            <circle cx="60" cy="90" r="7" fill="#2a78d0" stroke="#1a58b0" stroke-width="1.5"/>
+            <path d="M38 72 Q60 50 82 72" fill="none" stroke="#2a78d0" stroke-width="5" stroke-linecap="round"/>
+            <path d="M22 56 Q60 14 98 56" fill="none" stroke="#2a78d0" stroke-width="4.5" stroke-linecap="round" opacity="0.7"/>
+            <path d="M8 42 Q60 -8 112 42" fill="none" stroke="#2a78d0" stroke-width="4" stroke-linecap="round" opacity="0.38"/>
+            <rect x="44" y="100" width="32" height="16" rx="3" fill="#d0e8f8" stroke="#6090c0" stroke-width="1.2"/>
+            <circle cx="54" cy="108" r="3" fill="#6090c0"/>
+            <rect x="60" y="104" width="10" height="2.5" rx="1.2" fill="#6090c0"/>
+            <rect x="60" y="109" width="13" height="2.5" rx="1.2" fill="#6090c0"/>
+            <path d="M92 95 Q101 86 98 78 Q95 70 88 74 Q91 79 88 83 Z" fill="#6090c0" stroke="#3060a0" stroke-width="0.8"/>
+            <rect x="80" y="81" width="9" height="20" rx="2.5" fill="#6090c0" stroke="#3060a0" stroke-width="0.8" transform="rotate(38,84,91)"/>
+          </svg>
+        </div>
+        <div class="coupon-content">
+          <div class="coupon-header">✦ This coupon is good for ✦</div>
+          <div class="coupon-title">One Hour of Uninterrupted IT Support</div>
+          <div class="coupon-subtitle">From Your Favorite Grandson</div>
+          <div class="coupon-note">WiFi, apps, passwords — Yoni's got you covered. One full hour, guaranteed.</div>
+          <div class="coupon-footer">Presented to Papa Howard with Love &nbsp;•&nbsp; From: Yoni &nbsp;•&nbsp; Happy 80th Birthday! 🎂</div>
+        </div>
+      </div>
+      <div class="coupon-redemption">
+        <div class="redemption-date-block">
+          <div class="redemption-label">Redeemed On</div>
+          <div class="redemption-date-line"></div>
+          <div style="margin-top:10px; display:flex; justify-content:center;">
+            <div class="redemption-stamp"><div class="redemption-stamp-inner">Stamp<br>Here</div></div>
+          </div>
+        </div>
+        <div class="redemption-photo-block">
+          <div class="redemption-photo-label">📸 &nbsp;Memory Photo</div>
+          <div class="redemption-photo-placeholder">
+            <div class="photo-corner tl"></div><div class="photo-corner tr"></div>
+            <div class="photo-corner bl"></div><div class="photo-corner br"></div>
+            <div class="photo-placeholder-text">Attach your photo here<br><span style="font-size:10px; opacity:0.7;">print &amp; tape, or insert digitally</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ════════════ PAGE 5 — Coupons 9 & 10 ════════════ -->
+<div class="page">
+  <div class="coupon-page">
+
+    <!-- COUPON 9: Brunch -->
+    <div class="coupon-wrapper">
+      <div class="coupon-top">
+        <div class="coupon-illustration">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="52" cy="104" rx="44" ry="11" fill="#f0e8d8" stroke="#c8a878" stroke-width="1.5"/>
+            <ellipse cx="52" cy="100" rx="40" ry="10" fill="#fafaf0" stroke="#ddd" stroke-width="0.8"/>
+            <ellipse cx="44" cy="88" rx="20" ry="15" fill="white" stroke="#ddd" stroke-width="1.2"/>
+            <circle cx="44" cy="84" r="10" fill="#f5c030" stroke="#d4a020" stroke-width="1.2"/>
+            <ellipse cx="40" cy="81" rx="4" ry="3" fill="#fce060" opacity="0.7"/>
+            <ellipse cx="62" cy="90" rx="17" ry="13" fill="white" stroke="#ddd" stroke-width="1.2"/>
+            <circle cx="63" cy="87" r="8" fill="#f5c030" stroke="#d4a020" stroke-width="1.2"/>
+            <ellipse cx="61" cy="84" rx="3" ry="2.5" fill="#fce060" opacity="0.7"/>
+            <path d="M38 72 Q41 65 38 58" fill="none" stroke="#ccb090" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
+            <path d="M50 70 Q53 63 50 56" fill="none" stroke="#ccb090" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
+            <rect x="84" y="64" width="24" height="34" rx="3" fill="#d4a050" stroke="#a07030" stroke-width="1.5"/>
+            <path d="M84 70 Q96 60 108 70" fill="#c89040" stroke="#a07030" stroke-width="1.2"/>
+            <line x1="88" y1="76" x2="106" y2="76" stroke="#b07828" stroke-width="0.8" opacity="0.5"/>
+            <line x1="88" y1="82" x2="106" y2="82" stroke="#b07828" stroke-width="0.8" opacity="0.5"/>
+            <line x1="88" y1="88" x2="106" y2="88" stroke="#b07828" stroke-width="0.8" opacity="0.5"/>
+            <rect x="91" y="67" width="14" height="6" rx="2.5" fill="#f5e060" stroke="#d4c030" stroke-width="0.8"/>
+            <path d="M90 34 L84 62 L108 62 L102 34 Z" fill="#f59820" stroke="#d08020" stroke-width="1.2"/>
+            <ellipse cx="96" cy="34" rx="12" ry="4" fill="#f8b840" stroke="#d08020" stroke-width="1.2"/>
+            <circle cx="88" cy="46" r="2" fill="#f07010" opacity="0.5"/>
+            <circle cx="102" cy="52" r="1.8" fill="#f07010" opacity="0.5"/>
+            <path d="M87 38 L82 62" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+            <ellipse cx="108" cy="30" rx="8" ry="5" fill="#f5a020" stroke="#d08010" stroke-width="1"/>
+            <ellipse cx="108" cy="34" rx="8" ry="5" fill="#f8c840" stroke="#d08010" stroke-width="0.8"/>
+            <line x1="108" y1="26" x2="108" y2="38" stroke="#d08010" stroke-width="0.6"/>
+            <line x1="101" y1="28" x2="115" y2="36" stroke="#d08010" stroke-width="0.6"/>
+            <line x1="101" y1="36" x2="115" y2="28" stroke="#d08010" stroke-width="0.6"/>
+          </svg>
+        </div>
+        <div class="coupon-content">
+          <div class="coupon-header">✦ This coupon is good for ✦</div>
+          <div class="coupon-title">One Tasty Brunch</div>
+          <div class="coupon-subtitle">At Brunch Cafe</div>
+          <div class="coupon-note">Saturday or Sunday — your pick, Papa. OJ included.</div>
+          <div class="coupon-footer">Presented to Papa Howard with Love &nbsp;•&nbsp; From: Yoni &nbsp;•&nbsp; Happy 80th Birthday! 🎂</div>
+        </div>
+      </div>
+      <div class="coupon-redemption">
+        <div class="redemption-date-block">
+          <div class="redemption-label">Redeemed On</div>
+          <div class="redemption-date-line"></div>
+          <div style="margin-top:10px; display:flex; justify-content:center;">
+            <div class="redemption-stamp"><div class="redemption-stamp-inner">Stamp<br>Here</div></div>
+          </div>
+        </div>
+        <div class="redemption-photo-block">
+          <div class="redemption-photo-label">📸 &nbsp;Memory Photo</div>
+          <div class="redemption-photo-placeholder">
+            <div class="photo-corner tl"></div><div class="photo-corner tr"></div>
+            <div class="photo-corner bl"></div><div class="photo-corner br"></div>
+            <div class="photo-placeholder-text">Attach your photo here<br><span style="font-size:10px; opacity:0.7;">print &amp; tape, or insert digitally</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cut-line"><div class="cut-line-rule"></div><div class="cut-line-scissors">✂</div><div class="cut-line-rule"></div></div>
+
+    <!-- COUPON 10: Pizza -->
+    <div class="coupon-wrapper">
+      <div class="coupon-top">
+        <div class="coupon-illustration">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M60 18 L12 112 L108 112 Z" fill="#f5c840" stroke="#d4a020" stroke-width="1.5"/>
+            <path d="M12 112 Q60 122 108 112" fill="#d4904a" stroke="#b06828" stroke-width="2"/>
+            <path d="M60 30 L20 108 L100 108 Z" fill="#d43020" opacity="0.85"/>
+            <path d="M60 36 L24 104 L96 104 Z" fill="#f5d840" opacity="0.9"/>
+            <ellipse cx="52" cy="82" rx="12" ry="9" fill="#e8c828" stroke="#d0a818" stroke-width="0.8"/>
+            <ellipse cx="70" cy="72" rx="10" ry="8" fill="#e8c828" stroke="#d0a818" stroke-width="0.8"/>
+            <ellipse cx="60" cy="96" rx="11" ry="7" fill="#e8c828" stroke="#d0a818" stroke-width="0.8"/>
+            <ellipse cx="48" cy="72" rx="7" ry="4.5" fill="#8b3a18" stroke="#5a1e08" stroke-width="0.8" transform="rotate(-20,48,72)"/>
+            <ellipse cx="68" cy="88" rx="6.5" ry="4" fill="#8b3a18" stroke="#5a1e08" stroke-width="0.8" transform="rotate(15,68,88)"/>
+            <ellipse cx="58" cy="62" rx="6" ry="4" fill="#9a4020" stroke="#5a1e08" stroke-width="0.8" transform="rotate(8,58,62)"/>
+            <ellipse cx="74" cy="64" rx="5.5" ry="3.5" fill="#8b3a18" stroke="#5a1e08" stroke-width="0.8" transform="rotate(-10,74,64)"/>
+            <ellipse cx="44" cy="94" rx="6" ry="4" fill="#9a4020" stroke="#5a1e08" stroke-width="0.8" transform="rotate(20,44,94)"/>
+            <ellipse cx="74" cy="100" rx="6" ry="4" fill="#8b3a18" stroke="#5a1e08" stroke-width="0.8" transform="rotate(-15,74,100)"/>
+            <path d="M60 18 Q63 8 66 2" fill="none" stroke="#f0d030" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M60 18 Q58 7 60 1" fill="none" stroke="#f0d030" stroke-width="1.8" stroke-linecap="round" opacity="0.6"/>
+          </svg>
+        </div>
+        <div class="coupon-content">
+          <div class="coupon-header">✦ This coupon is good for ✦</div>
+          <div class="coupon-title">One Pizza Night Out</div>
+          <div class="coupon-subtitle">With the Whole Family</div>
+          <div class="coupon-note">Sausage slice. Extra cheese. Obviously.</div>
+          <div class="coupon-footer">Presented to Papa Howard with Love &nbsp;•&nbsp; From: Yoni &nbsp;•&nbsp; Happy 80th Birthday! 🎂</div>
+        </div>
+      </div>
+      <div class="coupon-redemption">
+        <div class="redemption-date-block">
+          <div class="redemption-label">Redeemed On</div>
+          <div class="redemption-date-line"></div>
+          <div style="margin-top:10px; display:flex; justify-content:center;">
+            <div class="redemption-stamp"><div class="redemption-stamp-inner">Stamp<br>Here</div></div>
+          </div>
+        </div>
+        <div class="redemption-photo-block">
+          <div class="redemption-photo-label">📸 &nbsp;Memory Photo</div>
+          <div class="redemption-photo-placeholder">
+            <div class="photo-corner tl"></div><div class="photo-corner tr"></div>
+            <div class="photo-corner bl"></div><div class="photo-corner br"></div>
+            <div class="photo-placeholder-text">Attach your photo here<br><span style="font-size:10px; opacity:0.7;">print &amp; tape, or insert digitally</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ════════════ PAGE 6 — Coupons 11 & 12 ════════════ -->
+<div class="page">
+  <div class="coupon-page">
+
+    <!-- COUPON 11: Ice Cream -->
+    <div class="coupon-wrapper">
+      <div class="coupon-top">
+        <div class="coupon-illustration">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M42 90 L60 120 L78 90 Z" fill="#d4884a" stroke="#a05820" stroke-width="1.5"/>
+            <line x1="51" y1="91" x2="60" y2="120" stroke="#b06828" stroke-width="0.8" opacity="0.6"/>
+            <line x1="60" y1="90" x2="60" y2="120" stroke="#b06828" stroke-width="0.8" opacity="0.6"/>
+            <line x1="69" y1="91" x2="60" y2="120" stroke="#b06828" stroke-width="0.8" opacity="0.6"/>
+            <line x1="43" y1="100" x2="77" y2="100" stroke="#b06828" stroke-width="0.8" opacity="0.5"/>
+            <line x1="44" y1="108" x2="76" y2="108" stroke="#b06828" stroke-width="0.8" opacity="0.5"/>
+            <ellipse cx="60" cy="87" rx="24" ry="18" fill="#5a2808" stroke="#3a1004" stroke-width="1.5"/>
+            <ellipse cx="58" cy="68" rx="22" ry="18" fill="#6a3010" stroke="#3a1004" stroke-width="1.5"/>
+            <ellipse cx="61" cy="48" rx="24" ry="21" fill="#7a3818" stroke="#3a1004" stroke-width="1.5"/>
+            <path d="M50 28 Q46 36 44 46 Q42 54 42 62" fill="none" stroke="#2a0800" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="42" cy="64" r="4" fill="#2a0800"/>
+            <path d="M70 30 Q74 38 76 48 Q78 57 78 64" fill="none" stroke="#2a0800" stroke-width="2.8" stroke-linecap="round"/>
+            <circle cx="78" cy="66" r="3.5" fill="#2a0800"/>
+            <path d="M60 27 Q60 36 58 46" fill="none" stroke="#2a0800" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M40 46 Q36 53 34 60" fill="none" stroke="#2a0800" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="34" cy="62" r="3" fill="#2a0800"/>
+            <ellipse cx="52" cy="40" rx="9" ry="6" fill="#9a4820" opacity="0.55"/>
+            <rect x="16" y="14" width="88" height="16" rx="8" fill="#3a1004" stroke="#6a2808" stroke-width="1.2"/>
+            <text x="60" y="26" font-family="Georgia,serif" font-size="9.5" fill="#f5d0a0" text-anchor="middle" font-style="italic" font-weight="bold">Chocolate only! 🍫</text>
+          </svg>
+        </div>
+        <div class="coupon-content">
+          <div class="coupon-header">✦ This coupon is good for ✦</div>
+          <div class="coupon-title">One Papa-Yoni Mystery Ride</div>
+          <div class="coupon-subtitle">For Chocolate Ice Cream</div>
+          <div class="coupon-note">Destination: unknown. Outcome: delicious. Chocolate only!</div>
+          <div class="coupon-footer">Presented to Papa Howard with Love &nbsp;•&nbsp; From: Yoni &nbsp;•&nbsp; Happy 80th Birthday! 🎂</div>
+        </div>
+      </div>
+      <div class="coupon-redemption">
+        <div class="redemption-date-block">
+          <div class="redemption-label">Redeemed On</div>
+          <div class="redemption-date-line"></div>
+          <div style="margin-top:10px; display:flex; justify-content:center;">
+            <div class="redemption-stamp"><div class="redemption-stamp-inner">Stamp<br>Here</div></div>
+          </div>
+        </div>
+        <div class="redemption-photo-block">
+          <div class="redemption-photo-label">📸 &nbsp;Memory Photo</div>
+          <div class="redemption-photo-placeholder">
+            <div class="photo-corner tl"></div><div class="photo-corner tr"></div>
+            <div class="photo-corner bl"></div><div class="photo-corner br"></div>
+            <div class="photo-placeholder-text">Attach your photo here<br><span style="font-size:10px; opacity:0.7;">print &amp; tape, or insert digitally</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cut-line"><div class="cut-line-rule"></div><div class="cut-line-scissors">✂</div><div class="cut-line-rule"></div></div>
+
+    <!-- COUPON 12: Grill Master -->
+    <div class="coupon-wrapper">
+      <div class="coupon-top">
+        <div class="coupon-illustration">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40 42 L30 116 L90 116 L80 42 Z" fill="#2a5fa0" stroke="#1a3f78" stroke-width="2"/>
+            <rect x="44" y="28" width="32" height="34" rx="4" fill="#2a5fa0" stroke="#1a3f78" stroke-width="1.5"/>
+            <path d="M44 31 Q60 20 76 31" fill="none" stroke="#1a3f78" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M30 68 Q18 64 8 72" fill="none" stroke="#1a3f78" stroke-width="4" stroke-linecap="round"/>
+            <path d="M90 68 Q102 64 112 72" fill="none" stroke="#1a3f78" stroke-width="4" stroke-linecap="round"/>
+            <rect x="46" y="88" width="28" height="24" rx="4" fill="#1a4a88" stroke="#0a2a58" stroke-width="1.2"/>
+            <text x="60" y="50" font-family="Georgia,serif" font-size="8" fill="#f0e0c0" text-anchor="middle" font-weight="bold">GRILL</text>
+            <text x="60" y="61" font-family="Georgia,serif" font-size="8" fill="#f0e0c0" text-anchor="middle" font-weight="bold">MASTER</text>
+            <path d="M55 66 Q58 59 60 64 Q62 59 65 66 Q67 72 60 75 Q53 72 55 66 Z" fill="#f06020"/>
+            <path d="M57 68 Q59 63 60 66 Q61 63 63 68 Q65 72 60 74 Q55 72 57 68 Z" fill="#f8c030"/>
+            <path d="M88 28 Q93 58 91 96" fill="none" stroke="#999" stroke-width="5.5" stroke-linecap="round"/>
+            <path d="M100 28 Q96 58 98 96" fill="none" stroke="#999" stroke-width="5.5" stroke-linecap="round"/>
+            <ellipse cx="94" cy="48" rx="8" ry="5" fill="none" stroke="#777" stroke-width="3"/>
+            <path d="M85 96 Q88 103 91 98 Q94 103 97 98 Q100 103 102 96" fill="none" stroke="#999" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <ellipse cx="88" cy="26" rx="5" ry="7" fill="#aaa" stroke="#777" stroke-width="1.2"/>
+            <ellipse cx="100" cy="26" rx="5" ry="7" fill="#aaa" stroke="#777" stroke-width="1.2"/>
+            <path d="M93 100 Q96 106 93 112" fill="none" stroke="#f06020" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+            <path d="M98 102 Q101 108 98 114" fill="none" stroke="#f06020" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
+          </svg>
+        </div>
+        <div class="coupon-content">
+          <div class="coupon-header">✦ This coupon is good for ✦</div>
+          <div class="coupon-title">One Night as Grill Master</div>
+          <div class="coupon-subtitle">At the New House</div>
+          <div class="coupon-note">Papa is in charge. Everyone else stays back. Apron &amp; tongs provided.</div>
+          <div class="coupon-footer">Presented to Papa Howard with Love &nbsp;•&nbsp; From: Yoni &nbsp;•&nbsp; Happy 80th Birthday! 🎂</div>
+        </div>
+      </div>
+      <div class="coupon-redemption">
+        <div class="redemption-date-block">
+          <div class="redemption-label">Redeemed On</div>
+          <div class="redemption-date-line"></div>
+          <div style="margin-top:10px; display:flex; justify-content:center;">
+            <div class="redemption-stamp"><div class="redemption-stamp-inner">Stamp<br>Here</div></div>
+          </div>
+        </div>
+        <div class="redemption-photo-block">
+          <div class="redemption-photo-label">📸 &nbsp;Memory Photo</div>
+          <div class="redemption-photo-placeholder">
+            <div class="photo-corner tl"></div><div class="photo-corner tr"></div>
+            <div class="photo-corner bl"></div><div class="photo-corner br"></div>
+            <div class="photo-placeholder-text">Attach your photo here<br><span style="font-size:10px; opacity:0.7;">print &amp; tape, or insert digitally</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
